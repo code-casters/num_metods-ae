@@ -1,0 +1,107 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="livetemplates.csharp.usevar">True</setting>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:main.Designer.cs" caret="492" fromTop="13" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:integration.cs" caret="1341" fromTop="14" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:main.cs" caret="806" fromTop="24" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:Program.cs" caret="505" fromTop="20" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:MathBinaryTree.cs" caret="677" fromTop="24" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:main.cs" caret="243" fromTop="9" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:main.cs" caret="718" fromTop="15" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:main.cs" caret="772" fromTop="24" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:integration.cs" caret="1913" fromTop="15" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:MathBinaryTree.cs" caret="5035" fromTop="3" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:integration.cs" caret="1913" fromTop="10" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:integration.cs" caret="1913" fromTop="0" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:integration.cs" caret="1913" fromTop="11" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:integration.cs" caret="1913" fromTop="7" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:integration.cs" caret="1913" fromTop="17" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:integration.cs" caret="1913" fromTop="9" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:integration.cs" caret="1913" fromTop="10" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:integration.cs" caret="1913" fromTop="12" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:integration.cs" caret="1913" fromTop="6" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:integration.cs" caret="1913" fromTop="5" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:integration.cs" caret="1913" fromTop="6" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:integration.cs" caret="1913" fromTop="19" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:integration.cs" caret="1910" fromTop="8" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:integration.cs" caret="1910" fromTop="14" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:integration.cs" caret="1910" fromTop="22" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:integration.cs" caret="1488" fromTop="17" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:integration.cs" caret="1044" fromTop="10" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:integration.cs" caret="1648" fromTop="22" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:integration.cs" caret="1204" fromTop="6" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:integration.cs" caret="1340" fromTop="10" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:integration.cs" caret="1818" fromTop="23" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:integration.cs" caret="1914" fromTop="32" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:MathBinaryTree.cs" caret="5035" fromTop="62" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:MathBinaryTree.cs" caret="2305" fromTop="32" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:MathBinaryTree.cs" caret="429" fromTop="16" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="using" priority="3" />
+      <Item value="Numerical_Methods" priority="2" />
+      <Item value="Numerical_Methods.Properties" priority="0" />
+      <Item value="MessageBox`0" priority="1" />
+      <Item value="this" priority="0" />
+      <Item value="class" priority="0" />
+      <Item value="void" priority="2" />
+      <Item value="Void`0" priority="0" />
+      <Item value="struct" priority="0" />
+      <Item value="return" priority="7" />
+      <Item value="pTable" priority="16" />
+      <Item value="bool" priority="0" />
+      <Item value="range" priority="11" />
+      <Item value="Point`0" priority="3" />
+      <Item value="new" priority="2" />
+      <Item value="Point" priority="0" />
+      <Item value="public" priority="2" />
+      <Item value="double" priority="11" />
+      <Item value="a" priority="0" />
+      <Item value="b" priority="0" />
+      <Item value="for" priority="3" />
+      <Item value="ranges" priority="0" />
+      <Item value="Length" priority="1" />
+      <Item value="res" priority="1" />
+      <Item value="i" priority="0" />
+      <Item value="GetLength`0" priority="7" />
+      <Item value="int" priority="1" />
+      <Item value="if" priority="4" />
+      <Item value="n" priority="0" />
+      <Item value="else" priority="1" />
+      <Item value="sum" priority="2" />
+      <Item value="static" priority="0" />
+      <Item value="RankException`0" priority="0" />
+      <Item value="rangesNum" priority="7" />
+      <Item value="foreach" priority="1" />
+      <Item value="hal" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Numerical_Methods.Integration+Point">
+      <Item value="a" priority="0" />
+      <Item value="b" priority="0" />
+      <Item value="GetStart`0" priority="1" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>
