@@ -10,19 +10,21 @@ using Numerical_Methods;
 
 namespace Numerical_Methods
 {
+	
     public partial class main : Form
     {
         public main()
         {
             double[,] pt = new double[2, 7];
-            pt[0, 0] = 0; pt[1, 0] = 0;
-            pt[0, 1] = 0.1; pt[1, 1] = 0.0001;
-            pt[0, 2] = 0.2; pt[1, 2] = 0.0016;
-            pt[0, 3] = 0.3; pt[1, 3] = 0.0081;
-            pt[0, 4] = 0.4; pt[1, 4] = 0.0256;
-            pt[0, 5] = 0.5; pt[1, 5] = 0.0625;
-            pt[0, 6] = 0.6; pt[1, 6] = 0.1296;
-            MessageBox.Show(Integration.Sempson(pt).ToString());
+            pt[0, 0] = 30; pt[1, 0] = 0.5;
+            pt[0, 1] = 35; pt[1, 1] = 0.5736;
+            pt[0, 2] = 40; pt[1, 2] = 0.6428;
+            pt[0, 3] = 45; pt[1, 3] = 0.7071;
+            pt[0, 4] = 50; pt[1, 4] = 0.7660;
+            pt[0, 5] = 55; pt[1, 5] = 0.8192;
+            pt[0, 6] = 60; pt[1, 6] = 0.8660;
+            MessageBox.Show(Integration.Rects(pt,30,60,5).ToString());
+			MessageBox.Show(Interpolation.CalcPdiff(pt,3,1).ToString());
             InitializeComponent();
         }
     }

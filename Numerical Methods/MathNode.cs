@@ -25,7 +25,7 @@ namespace nume_metodsae
 		Sub  = 19 , // -
 		Mult = 20 , // *
 		Div  = 21 , // /
-		Mod  = 22   // %
+		Mod  = 22 , // %
 	}
 	
 	public class MathNode 
@@ -65,19 +65,19 @@ namespace nume_metodsae
 		
 		public MathNode(char op){ // Creating op Node Only with + - * / 
 			if(op == '+'){
-				this.Create(Type:Type.Sum);
+				this.Create(type:Type.Sum);
 			}
 			else if (op == '-'){
-				this.Create(Type:Type.Sub);
+				this.Create(type:Type.Sub);
 			}
 			else if (op == '*'){
-				this.Create(Type:Type.Mult);
+				this.Create(type:Type.Mult);
 			}
 			else if (op == '/' || op == '÷'){
-				this.Create(Type:Type.Div);
+				this.Create(type:Type.Div);
 			}
 			else if (op == '%'){
-				this.Create(Type:Type.Mod);
+				this.Create(type:Type.Mod);
 			}
 		}
 		
@@ -97,7 +97,7 @@ namespace nume_metodsae
 		/// <param name='Inner'>
 		/// Inner : The Inner value of expression operator . ex : log(5x) Inner is 5x .
 		/// </param>
-		public void Create(double cons , double pow = 0 , Type type = 0 , List<MathNode> Inner = null){
+		public void Create(double cons = 0 , double pow = 0 , Type type = 0 , List<MathNode> Inner = null){
 			this.Const = cons ;
 			this.Power = pow  ;
 			this.type  = type ;
@@ -119,13 +119,52 @@ namespace nume_metodsae
 			}
 		}
 			
-		public bool isLeaf(){
+		public bool isLeaf(){ // Check if this Node is leaf or not
 			if(this.Children[0] == null && this.Children[1] == null){
 				return true ;
 			}
 			else 
 				return false;
-		}	
+		}
+		
+	/*	public double eval (double x,out double ans){
+			if (this.inner.Count !=0){
+				for (int i = 0; i < this.inner.Count; i++) {
+					this.inner[i].eval(x,out ans);
+				}
+			}
+			switch (this.type) {
+			case Type.Abs :
+				ans = Math.Pow(this.Const*Math.Abs(x),this.Power);break;
+			case Type.Acos:
+				ans = Math.Pow(this.Const*Math.Acos(x),this.Power);break;
+			case Type.ASin:
+				ans = Math.Pow(this.Const*Math.Asin(x),this.Power);break;
+			case Type.Atan:
+				ans = Math.Pow(this.Const*Math.Tan(x),this.Power);break;
+			case Type.Cos :
+				ans = Math.Pow(this.Const*Math.Cos(x),this.Power);break;
+			case Type.Cosh :
+				ans = Math.Pow(this.Const*Math.Cosh(x),this.Power);break;
+			case Type.Cot :
+				ans = Math.Pow(this.Const*(1d/Math.Tan(x)),this.Power);break;
+			case Type.Exp :
+				ans = Math.Pow(this.Const*Math.Exp(x),this.Power);break;
+			case Type.Ln :
+				ans = Math.Pow(this.Const*Math.Log(x),this.Power);break;
+			case Type.Log:
+				ans = Math.Pow(this.Const*Math.Log10(x),this.Power);break;
+			case Type.None:
+				ans = Math.Pow(this.Const*x,this.Power);break;
+			case Type.Pow :
+				ans = Math.Pow(this.Const*Math.Pow(x),this.Power);break;
+			case Type.root: // we have to take a care when user enter a root more than 2 to put the right power .
+				ans = Math.Pow(this.Const*x,this.Power);break;
+				
+			}	
+			
+			
+		}*/
 	}
 }
 

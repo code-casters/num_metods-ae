@@ -78,6 +78,8 @@
     </Compile>
     <Compile Include="Math_Expression.cs" />
     <Compile Include="MathNode.cs" />
+    <Compile Include="differential_equations.cs" />
+    <Compile Include="Interpolation.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
