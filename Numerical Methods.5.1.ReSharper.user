@@ -10,42 +10,44 @@
   <RecentFiles>
     <RecentFiles>
       <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:main.Designer.cs" caret="492" fromTop="13" />
-      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:integration.cs" caret="1341" fromTop="14" />
       <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:main.cs" caret="806" fromTop="24" />
       <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:Program.cs" caret="505" fromTop="20" />
-      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:MathBinaryTree.cs" caret="677" fromTop="24" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:integration.cs" caret="12" fromTop="0" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:Interpolation.cs" caret="1288" fromTop="15" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:MathNode.cs" caret="1312" fromTop="22" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:MathBinaryTree.cs" caret="829" fromTop="20" />
     </RecentFiles>
     <RecentEdits>
-      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:main.cs" caret="243" fromTop="9" />
-      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:main.cs" caret="718" fromTop="15" />
-      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:main.cs" caret="772" fromTop="24" />
-      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:integration.cs" caret="1913" fromTop="15" />
-      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:MathBinaryTree.cs" caret="5035" fromTop="3" />
-      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:integration.cs" caret="1913" fromTop="10" />
-      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:integration.cs" caret="1913" fromTop="0" />
-      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:integration.cs" caret="1913" fromTop="11" />
-      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:integration.cs" caret="1913" fromTop="7" />
-      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:integration.cs" caret="1913" fromTop="17" />
-      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:integration.cs" caret="1913" fromTop="9" />
-      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:integration.cs" caret="1913" fromTop="10" />
-      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:integration.cs" caret="1913" fromTop="12" />
-      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:integration.cs" caret="1913" fromTop="6" />
-      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:integration.cs" caret="1913" fromTop="5" />
-      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:integration.cs" caret="1913" fromTop="6" />
-      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:integration.cs" caret="1913" fromTop="19" />
-      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:integration.cs" caret="1910" fromTop="8" />
-      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:integration.cs" caret="1910" fromTop="14" />
-      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:integration.cs" caret="1910" fromTop="22" />
-      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:integration.cs" caret="1488" fromTop="17" />
-      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:integration.cs" caret="1044" fromTop="10" />
-      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:integration.cs" caret="1648" fromTop="22" />
-      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:integration.cs" caret="1204" fromTop="6" />
-      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:integration.cs" caret="1340" fromTop="10" />
-      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:integration.cs" caret="1818" fromTop="23" />
-      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:integration.cs" caret="1914" fromTop="32" />
-      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:MathBinaryTree.cs" caret="5035" fromTop="62" />
-      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:MathBinaryTree.cs" caret="2305" fromTop="32" />
-      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:MathBinaryTree.cs" caret="429" fromTop="16" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:MathBinaryTree.cs" caret="4092" fromTop="32" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:Interpolation.cs" caret="1238" fromTop="24" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:Interpolation.cs" caret="406" fromTop="4" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:Interpolation.cs" caret="211" fromTop="8" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:Interpolation.cs" caret="1216" fromTop="14" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:Interpolation.cs" caret="1544" fromTop="16" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:Interpolation.cs" caret="1439" fromTop="16" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:integration.cs" caret="1554" fromTop="16" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:integration.cs" caret="2566" fromTop="16" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:integration.cs" caret="31" fromTop="0" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:MathNode.cs" caret="2175" fromTop="169" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:MathNode.cs" caret="2175" fromTop="16" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:MathNode.cs" caret="67" fromTop="9" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:MathNode.cs" caret="0" fromTop="2" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:MathNode.cs" caret="2161" fromTop="17" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:MathNode.cs" caret="983" fromTop="9" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:MathNode.cs" caret="1527" fromTop="14" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:MathNode.cs" caret="1698" fromTop="21" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:MathNode.cs" caret="1865" fromTop="27" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:MathBinaryTree.cs" caret="236" fromTop="7" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:MathBinaryTree.cs" caret="312" fromTop="13" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:MathBinaryTree.cs" caret="299" fromTop="13" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:MathNode.cs" caret="425" fromTop="15" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:MathBinaryTree.cs" caret="1285" fromTop="8" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:MathBinaryTree.cs" caret="1921" fromTop="26" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:MathBinaryTree.cs" caret="1009" fromTop="20" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:MathBinaryTree.cs" caret="467" fromTop="17" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:MathNode.cs" caret="1368" fromTop="25" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:MathNode.cs" caret="1312" fromTop="22" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:MathBinaryTree.cs" caret="908" fromTop="25" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
@@ -65,43 +67,95 @@
       <Item value="Numerical_Methods" priority="2" />
       <Item value="Numerical_Methods.Properties" priority="0" />
       <Item value="MessageBox`0" priority="1" />
-      <Item value="this" priority="0" />
+      <Item value="this" priority="5" />
       <Item value="class" priority="0" />
-      <Item value="void" priority="2" />
+      <Item value="void" priority="5" />
       <Item value="Void`0" priority="0" />
       <Item value="struct" priority="0" />
-      <Item value="return" priority="7" />
+      <Item value="return" priority="14" />
       <Item value="pTable" priority="16" />
-      <Item value="bool" priority="0" />
+      <Item value="bool" priority="2" />
       <Item value="range" priority="11" />
       <Item value="Point`0" priority="3" />
-      <Item value="new" priority="2" />
+      <Item value="new" priority="6" />
       <Item value="Point" priority="0" />
-      <Item value="public" priority="2" />
-      <Item value="double" priority="11" />
+      <Item value="public" priority="9" />
+      <Item value="double" priority="24" />
       <Item value="a" priority="0" />
       <Item value="b" priority="0" />
-      <Item value="for" priority="3" />
+      <Item value="for" priority="6" />
       <Item value="ranges" priority="0" />
       <Item value="Length" priority="1" />
-      <Item value="res" priority="1" />
+      <Item value="res" priority="3" />
       <Item value="i" priority="0" />
-      <Item value="GetLength`0" priority="7" />
-      <Item value="int" priority="1" />
-      <Item value="if" priority="4" />
+      <Item value="GetLength`0" priority="10" />
+      <Item value="int" priority="2" />
+      <Item value="if" priority="6" />
       <Item value="n" priority="0" />
-      <Item value="else" priority="1" />
-      <Item value="sum" priority="2" />
-      <Item value="static" priority="0" />
+      <Item value="else" priority="2" />
+      <Item value="sum" priority="5" />
+      <Item value="static" priority="1" />
       <Item value="RankException`0" priority="0" />
       <Item value="rangesNum" priority="7" />
       <Item value="foreach" priority="1" />
       <Item value="hal" priority="0" />
+      <Item value="pointsTable" priority="5" />
+      <Item value="InsufficientExecutionStackException`0" priority="0" />
+      <Item value="l" priority="3" />
+      <Item value="char" priority="1" />
+      <Item value="Operator`0" priority="7" />
+      <Item value="operator" priority="2" />
+      <Item value="Operator" priority="0" />
+      <Item value="List" priority="0" />
+      <Item value="MathNode`0" priority="3" />
+      <Item value="List&lt;MathNode&gt;" priority="0" />
+      <Item value="Variable" priority="0" />
+      <Item value="num" priority="2" />
+      <Item value="string" priority="2" />
+      <Item value="private" priority="2" />
+      <Item value="Stack" priority="0" />
+      <Item value="Stack&lt;MathNode&gt;" priority="0" />
+      <Item value="mathexp" priority="2" />
+      <Item value="pnum" priority="0" />
+      <Item value="out" priority="3" />
+      <Item value="MathNode" priority="1" />
+      <Item value="AuxStack" priority="2" />
+      <Item value="pop" priority="0" />
+      <Item value="op" priority="6" />
+      <Item value="switch" priority="0" />
+      <Item value="case" priority="4" />
+      <Item value="Mult" priority="0" />
+      <Item value="true" priority="4" />
+      <Item value="Mod" priority="0" />
+      <Item value="Sub" priority="0" />
+      <Item value="IsOp`0" priority="0" />
+      <Item value="tmp" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:Numerical_Methods.Integration+Point">
       <Item value="a" priority="0" />
       <Item value="b" priority="0" />
       <Item value="GetStart`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Numerical_Methods.MathNode">
+      <Item value="Variable" priority="0" />
+      <Item value="Num" priority="0" />
+      <Item value="Op" priority="0" />
+      <Item value="Children" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.List`1">
+      <Item value="Add`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Double">
+      <Item value="TryParse`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.Stack`1">
+      <Item value="Push`0" priority="1" />
+      <Item value="Pop`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Numerical_Methods.Operator">
+      <Item value="TryParse`1" priority="1" />
+      <Item value="Div" priority="0" />
+      <Item value="Sum" priority="0" />
     </ItemStatistics>
   </CompletionStatisticsManager>
 </Configuration>
