@@ -15,12 +15,42 @@ namespace Numerical_Methods
 					if (aux.Count == 0) {
 						aux.Push(infix[i]);
 					}
+					else if (precedence(aux.Peek().ToString()) == precedence(infix[i].ToString())) {
+						postfix += aux.Pop();
+						aux.Push(infix[i]);
+					}
+					else if (precedence(aux.Peek().ToString()) < precedence(infix[i].ToString())) {
+						aux.Push(infix[i]);
+					}
 					else {
 						while ( (aux.Count > 0) && (precedence(aux.Peek().ToString()) > precedence(infix[i].ToString()))) {
 							postfix += aux.Pop();
 						}
 						aux.Push(infix[i]);
 					}
+				}
+				else if (infix[i] == '(') {
+					string subPostfix = " " ;
+					int Bnum = 1 ;
+					i++;
+					while ((Bnum != 0) && (i < infix.Length)) {
+						if (infix[i] == '(') {
+							Bnum ++;
+							subPostfix += infix[i].ToString();
+						}
+						else if (infix[i] == ')') {
+							Bnum -- ;
+							if (Bnum != 0) {
+								subPostfix += infix[i].ToString();
+							}
+						}
+						else {
+							subPostfix += infix[i].ToString();
+						}
+						i++;
+					}
+					i--;
+					postfix += Postfix(subPostfix.TrimStart());
 				}
 				else {
 					postfix += infix[i].ToString();
