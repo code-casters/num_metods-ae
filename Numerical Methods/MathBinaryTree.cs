@@ -14,7 +14,7 @@ namespace Numerical_Methods
 		}
         public void Build(string[] mathexp)
         {
-            for (int i = 0; i < mathexp.GetLength(0); i++)
+            for (int i = 0; i < mathexp.GetLength(0) ; i++)
             {
                 double num;
                 Operator op;
@@ -65,6 +65,7 @@ namespace Numerical_Methods
             }
             return res;
         }
+
 	}
 }
 

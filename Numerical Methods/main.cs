@@ -13,6 +13,7 @@ namespace Numerical_Methods
 	
     public partial class main : Form
     {
+		
         public main()
         {
             double[,] pt = new double[2, 7];
@@ -23,8 +24,7 @@ namespace Numerical_Methods
             pt[0, 4] = 50; pt[1, 4] = 0.7660;
             pt[0, 5] = 55; pt[1, 5] = 0.8192;
             pt[0, 6] = 60; pt[1, 6] = 0.8660;
-            MessageBox.Show(Integration.Rects(pt,30,60,5).ToString());
-			MessageBox.Show(Interpolation.CalcPdiff(pt,3,1).ToString());
+			MessageBox.Show(Functions.Postfix("a+c+b"));
             InitializeComponent();
         }
     }
