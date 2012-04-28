@@ -9,17 +9,17 @@ namespace Numerical_Methods
         {
         }
         /// <summary>
-        /// Solving the integration by Sempson method .
+        /// Solving the integration by Simpson method.
         /// </summary>
-        /// <param name='pointTable'>
-        /// two dim array contain set of point to use in integration.
+        /// <param name='pTable'>
+        /// Two dimensons array contains a set of point to used in integration.
         /// </param>
-        public static double Sempson(double[,] pointTable)
+        public static double Simpson(double[,] pTable)
         {
-            if (Integration.CheckPointTable(pointTable))
+            if (CheckPointTable(pTable))
             {
-                double h = pointTable[0, 1] - pointTable[0, 0]; // the step between Point.
-                int n = pointTable.GetLength(1) - 1; // the number of table point (y section ).
+                double h = pTable[0, 1] - pTable[0, 0]; // the step between Point.
+                int n = pTable.GetLength(1) - 1; // the number of table point (y section ).
                 double sum = 0;
                 if (n % 2 == 0)
                 {
@@ -27,15 +27,15 @@ namespace Numerical_Methods
                     {
                         if (i == 0 || i == n) // Sempson low (f0 & fn) .
                         {
-                            sum += pointTable[1, i];
+                            sum += pTable[1, i];
                         }
                         else if (i % 2 == 0) // Sempson low pair num mult with 2
                         {
-                            sum += (2 * pointTable[1, i]);
+                            sum += (2 * pTable[1, i]);
                         }
                         else
                         {
-                            sum += (4 * pointTable[1, i]); // Sempson low odd num mult with 4
+                            sum += (4 * pTable[1, i]); // Sempson low odd num mult with 4
                         }
                     }
                 }
@@ -44,38 +44,52 @@ namespace Numerical_Methods
             return -1;
         }
 
-        public static double Rects(double[,] pTable, double a, double b, int rangesNum = 1)
+        /// <summary>
+        /// Solving the integration by Rectangles method.
+        /// </summary>
+        /// <param name='pTable'>
+        /// Two dimensons array contains a set of point to used in integration.
+        /// </param>
+        public static double Rects(double[,] pTable)
         {
-            if (rangesNum != 1)
+            //a and b are pTable[0,0] and pTable[0,rangesNum]
+            if (pTable.GetLength(0) != 1))
             {
                 double sum = 0d;
-                for (int i = 0; i < rangesNum; i++)
+                for (int i = 0; i < pTable.GetLength(0); i++)
                 {
                     sum += pTable[1, i];
                 }
-                return sum * (b - a) / rangesNum;
+                return sum * (pTable[0, pTable.GetLength(0)] - pTable[0, 0]) / pTable.GetLength(0);
             }
-            return pTable[0, 1] * (b - a);
+            return pTable[1, 0] * (pTable[0, rangesNum] - pTable[0, 0]); //Consider pTable[1,0] = f(a) , pTable[0,0] = a
         }
-        public static double Trapezoid(double[,] pTable, double a, double b, int rangesNum = 1)
+
+        /// <summary>
+        /// Solving the integration by Trapezoid method.
+        /// </summary>
+        /// <param name='pTable'>
+        /// Two dim array contain set of point to use in integration.
+        /// </param>
+        public static double Trapezoid(double[,] pTable)
         {
-            if (rangesNum != 1)
+            if (pTable.GetLength(0) != 1)
             {
                 double sum = 0d;
-                for (int i = 0; i < rangesNum; i++)
+                for (int i = 0; i < pTable.GetLength(0); i++)
                 {
                     sum += pTable[1, i];
                 }
-                return (2 * sum - pTable[1, 0] - pTable[1, pTable.GetLength(0) - 1]) * (b - a) / 2;
+                return (2 * sum - pTable[1, 0] - pTable[1, pTable.GetLength(0)]) * (pTable[0, pTable.GetLength(0)] - pTable[0, 0]) / 2;
             }
-            return (b + a) * (b - a) / 2;
+            return (pTable[1, rangesNum] + pTable[1, 0]) * (pTable[0, rangesNum] - pTable[0, 0]) / 2;
         }
-        public static bool CheckPointTable(double[,] PointTable)
+        public static bool CheckPointTable(double[,] pointTable)
         {
-            double len = Math.Round((PointTable[0, 1] - PointTable[0, 0]), 5);
-            for (int i = 2; i < PointTable.GetLength(1); i++)
+            double len = Math.Round((pointTable[0, 1] - pointTable[0, 0]), 5);
+            for (int i = 2; i < pointTable.GetLength(1); i++)
             {
-                if (Math.Round(PointTable[0, i] - PointTable[0, i - 1], 5) != len)
+                if (Math.Round(pointTable[0, i] - pointTable[0, i - 1], 5) != len)
                 {
                     return false;
                 }

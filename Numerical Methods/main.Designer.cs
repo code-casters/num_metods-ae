@@ -1,6 +1,6 @@
 ﻿namespace Numerical_Methods
 {
-    partial class main
+    partial class Main
     {
         /// <summary>
         /// Required designer variable.
@@ -35,7 +35,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 262);
-            this.Name = "main";
+            this.Name = "Main";
             this.Text = "Numerical Methods";
             this.ResumeLayout(false);
 

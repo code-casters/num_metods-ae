@@ -4,7 +4,7 @@
     <integer />
     <boolean>
       <setting name="livetemplates.csharp.usevar">True</setting>
-      <setting name="SolutionAnalysisEnabled">False</setting>
+      <setting name="SolutionAnalysisEnabled">True</setting>
     </boolean>
   </SettingsComponent>
   <RecentFiles>
@@ -12,21 +12,15 @@
       <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:main.Designer.cs" caret="492" fromTop="13" />
       <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:main.cs" caret="806" fromTop="24" />
       <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:Program.cs" caret="505" fromTop="20" />
-      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:integration.cs" caret="12" fromTop="0" />
-      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:Interpolation.cs" caret="1288" fromTop="15" />
       <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:MathNode.cs" caret="1312" fromTop="22" />
       <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:MathBinaryTree.cs" caret="829" fromTop="20" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:Interpolation.cs" caret="1057" fromTop="33" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:integration.cs" caret="370" fromTop="13" />
     </RecentFiles>
     <RecentEdits>
-      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:MathBinaryTree.cs" caret="4092" fromTop="32" />
-      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:Interpolation.cs" caret="1238" fromTop="24" />
-      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:Interpolation.cs" caret="406" fromTop="4" />
-      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:Interpolation.cs" caret="211" fromTop="8" />
-      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:Interpolation.cs" caret="1216" fromTop="14" />
       <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:Interpolation.cs" caret="1544" fromTop="16" />
       <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:Interpolation.cs" caret="1439" fromTop="16" />
-      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:integration.cs" caret="1554" fromTop="16" />
-      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:integration.cs" caret="2566" fromTop="16" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:integration.cs" caret="1542" fromTop="16" />
       <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:integration.cs" caret="31" fromTop="0" />
       <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:MathNode.cs" caret="2175" fromTop="169" />
       <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:MathNode.cs" caret="2175" fromTop="16" />
@@ -48,6 +42,12 @@
       <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:MathNode.cs" caret="1368" fromTop="25" />
       <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:MathNode.cs" caret="1312" fromTop="22" />
       <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:MathBinaryTree.cs" caret="908" fromTop="25" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:integration.cs" caret="2005" fromTop="18" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:Interpolation.cs" caret="803" fromTop="5" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:integration.cs" caret="2005" fromTop="6" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:integration.cs" caret="2498" fromTop="19" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:integration.cs" caret="151" fromTop="7" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:integration.cs" caret="322" fromTop="13" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
