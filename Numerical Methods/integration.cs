@@ -52,17 +52,17 @@ namespace Numerical_Methods
         /// </param>
         public static double Rects(double[,] pTable)
         {
-            //a and b are pTable[0,0] and pTable[0,rangesNum]
-            if (pTable.GetLength(0) != 1))
+            //a and b are pTable[0,0] and pTable[0,pTable.GetLength(1)]
+            if (pTable.GetLength(1) != 1)
             {
                 double sum = 0d;
-                for (int i = 0; i < pTable.GetLength(0); i++)
+                for (int i = 0; i < pTable.GetLength(1); i++)
                 {
                     sum += pTable[1, i];
                 }
-                return sum * (pTable[0, pTable.GetLength(0)] - pTable[0, 0]) / pTable.GetLength(0);
+                return sum * (pTable[0, pTable.GetLength(1)-1] - pTable[0, 0]) / pTable.GetLength(1);
             }
-            return pTable[1, 0] * (pTable[0, rangesNum] - pTable[0, 0]); //Consider pTable[1,0] = f(a) , pTable[0,0] = a
+            return pTable[1, 0] * (pTable[0, pTable.GetLength(1)-1] - pTable[0, 0]); //Consider pTable[1,0] = f(a) , pTable[0,0] = a
         }
 
         /// <summary>
@@ -73,16 +73,16 @@ namespace Numerical_Methods
         /// </param>
         public static double Trapezoid(double[,] pTable)
         {
-            if (pTable.GetLength(0) != 1)
+            if (pTable.GetLength(1) != 1)
             {
                 double sum = 0d;
-                for (int i = 0; i < pTable.GetLength(0); i++)
+                for (int i = 0; i < pTable.GetLength(1); i++)
                 {
                     sum += pTable[1, i];
                 }
-                return (2 * sum - pTable[1, 0] - pTable[1, pTable.GetLength(0)]) * (pTable[0, pTable.GetLength(0)] - pTable[0, 0]) / 2;
+                return (2 * sum - pTable[1, 0] - pTable[1, pTable.GetLength(1)-1]) * (pTable[0, pTable.GetLength(1)-1] - pTable[0, 0]) / 12;
             }
-            return (pTable[1, rangesNum] + pTable[1, 0]) * (pTable[0, rangesNum] - pTable[0, 0]) / 2;
+            return (pTable[1, pTable.GetLength(1)-1] + pTable[1, 0]) * (pTable[0, pTable.GetLength(1)-1] - pTable[0, 0]) / 2;
         }
         public static bool CheckPointTable(double[,] pointTable)
         {
