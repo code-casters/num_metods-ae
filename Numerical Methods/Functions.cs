@@ -69,11 +69,6 @@ namespace Numerical_Methods
 				return 2 ;
 			}
 		}
-		public static string[] Parsing (string PostfixExp , params char[] VarNames){
-			for (int i = 0; i < PostfixExp.Length; i++) {
-				
-			}
-		}
 	}
 }
 
