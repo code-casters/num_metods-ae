@@ -2,11 +2,8 @@ using System;
 
 namespace Numerical_Methods
 {
-    public class Interpolation
+    public static class Interpolation
     {
-        public Interpolation()
-        {
-        }
        /* public static double[,] CreatPdiffTable(double[,] pointsTable)
         {
             double[,] PdiffTable = new double[pointsTable.GetLength(1) - 1, pointsTable.GetLength(1) - 1];
@@ -33,7 +30,7 @@ namespace Numerical_Methods
                 return Factorial(num - 1) * num;
             }
         }
-       /* public static double Lagrange(double [,] pointsTable)
+       /*public static double Lagrange(double [,] pointsTable)
         {
             double sum = 0, l;
             for (int i = 0; i < pointsTable.GetLength(1); i++)

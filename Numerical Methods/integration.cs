@@ -3,11 +3,8 @@ using Numerical_Methods;
 
 namespace Numerical_Methods
 {
-    public class Integration
+    public static class Integration
     {
-        public Integration()
-        {
-        }
         /// <summary>
         /// Solving the integration by Simpson method.
         /// </summary>
@@ -25,17 +22,17 @@ namespace Numerical_Methods
                 {
                     for (int i = 0; i <= n; i++)
                     {
-                        if (i == 0 || i == n) // Sempson low (f0 & fn) .
+                        if (i == 0 || i == n) // Simpson low (f0 & fn) .
                         {
                             sum += pTable[1, i];
                         }
-                        else if (i % 2 == 0) // Sempson low pair num mult with 2
+                        else if (i % 2 == 0) // Simpson low pair num mult with 2
                         {
                             sum += (2 * pTable[1, i]);
                         }
                         else
                         {
-                            sum += (4 * pTable[1, i]); // Sempson low odd num mult with 4
+                            sum += (4 * pTable[1, i]); // Simpson low odd num mult with 4
                         }
                     }
                 }
@@ -60,9 +57,9 @@ namespace Numerical_Methods
                 {
                     sum += pTable[1, i];
                 }
-                return sum * (pTable[0, pTable.GetLength(1)-1] - pTable[0, 0]) / pTable.GetLength(1);
+                return sum * (pTable[0, pTable.GetLength(1) - 1] - pTable[0, 0]) / pTable.GetLength(1);
             }
-            return pTable[1, 0] * (pTable[0, pTable.GetLength(1)-1] - pTable[0, 0]); //Consider pTable[1,0] = f(a) , pTable[0,0] = a
+            return pTable[1, 0] * (pTable[0, pTable.GetLength(1) - 1] - pTable[0, 0]); //Consider pTable[1,0] = f(a) , pTable[0,0] = a
         }
 
         /// <summary>
@@ -73,16 +70,20 @@ namespace Numerical_Methods
         /// </param>
         public static double Trapezoid(double[,] pTable)
         {
-            if (pTable.GetLength(1) != 1)
+            if (CheckPointTable(pTable))
             {
                 double sum = 0d;
-                for (int i = 0; i < pTable.GetLength(1); i++)
+                if (pTable.GetLength(1) != 1)
                 {
-                    sum += pTable[1, i];
+                    for (int i = 1; i < pTable.GetLength(1)-1; i++)
+                    {
+                        sum += pTable[1, i];
+                    }
+                    sum *= 2;
                 }
-                return (2 * sum - pTable[1, 0] - pTable[1, pTable.GetLength(1)-1]) * (pTable[0, pTable.GetLength(1)-1] - pTable[0, 0]) / 12;
+                return (sum + pTable[1, pTable.GetLength(1) - 1] + pTable[1, 0]) * (pTable[0, 1] - pTable[0, 0]) / 2;
             }
-            return (pTable[1, pTable.GetLength(1)-1] + pTable[1, 0]) * (pTable[0, pTable.GetLength(1)-1] - pTable[0, 0]) / 2;
+            return -1;
         }
         public static bool CheckPointTable(double[,] pointTable)
         {
