@@ -6,17 +6,24 @@ namespace Numerical_Methods
 	public class MathBinaryTree
 	{	  
 		private List<MathNode> Body = new List<MathNode>(); 
-		private Stack<MathNode> AuxStack = new Stack<MathNode>();
 
 		public MathBinaryTree ()
 		{
 			
 		}
 		public static void Parsing (string PostfixExp , params char[] VarNames){
+			Stack<MathNode> PexStack = new Stack<MathNode>();
 			for (int i = 0; i < PostfixExp.Length; i++) {
-				int num ;
-				while (double.TryParse(PostfixExp[i],out num) || PostfixExp[i] == '.' ) {
-					i++;
+				if (double.TryParse(PostfixExp[i],out num) || PostfixExp[i] == '.' ) {
+					int num ;
+					string Dnum = string.Empty;
+					while (double.TryParse(PostfixExp[i],out num) || PostfixExp[i] == '.' ) {
+						Dnum += PostfixExp[i];
+						i++;
+					}
+					i--;
+					MathNode tmp = new MathNode(double.Parse(Dnum));
+					PexStack.Push(tmp);
 				}
 			}
 		}
