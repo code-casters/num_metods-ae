@@ -46,7 +46,8 @@ namespace Numerical_Methods
             }
             return res;
         }
-
+        public static byte Rank(){} //Function returns equation's rank
+        public static byte Degree(){} //Function returns equation's degree
 	}
 }
 

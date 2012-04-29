@@ -1,12 +1,20 @@
 using System;
+using Numerical_Methods;
 
 namespace Numerical_Methods
 {
-	public class differential_equations
+	public static class DifferentialEquations
 	{
-		public differential_equations ()
-		{
-		}
+	    public static double Tailor(MathBinaryTree eq;int h; double [,] primaryConds)
+	{
+	    return -1;
+	}
+
+	    private static bool CheckPrimaryConds(double[,] primaryConds)
+	    {
+	        return primaryConds.GetLength(1)== 
+	    }
+
 	}
 }
 
