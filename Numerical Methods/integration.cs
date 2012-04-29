@@ -80,9 +80,9 @@ namespace Numerical_Methods
                 {
                     sum += pTable[1, i];
                 }
-                return (2 * sum - pTable[1, 0] - pTable[1, pTable.GetLength(1)-1]) * (pTable[0, pTable.GetLength(1)-1] - pTable[0, 0]) / 12;
+                return (2 * sum - pTable[1, 0] - pTable[1, pTable.GetLength(1)-1]) * ((pTable[0,1] - pTable[0, 0]) / 2);
             }
-            return (pTable[1, pTable.GetLength(1)-1] + pTable[1, 0]) * (pTable[0, pTable.GetLength(1)-1] - pTable[0, 0]) / 2;
+            return (pTable[1, pTable.GetLength(1)-1] + pTable[1, 0]) * ((pTable[0,1] - pTable[0, 0]) / 2);
         }
         public static bool CheckPointTable(double[,] pointTable)
         {
