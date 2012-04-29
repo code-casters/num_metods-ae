@@ -68,11 +68,6 @@ namespace Numerical_Methods
 			else {
 				return 2 ;
 			}
-<<<<<<< HEAD
-		}
-=======
-		} 
->>>>>>> origin/master
 	}
 }
 
