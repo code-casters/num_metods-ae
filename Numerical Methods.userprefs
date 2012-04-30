@@ -1,0 +1,35 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Numerical Methods/MathNode.cs">
+    <Files>
+      <File FileName="Numerical Methods/Program.cs" Line="1" Column="1" />
+      <File FileName="Numerical Methods/main.cs" Line="41" Column="4" />
+      <File FileName="Numerical Methods/differential_equations.cs" Line="11" Column="3" />
+      <File FileName="Numerical Methods/Interpolation.cs" Line="1" Column="1" />
+      <File FileName="Numerical Methods/MathNode.cs" Line="94" Column="28" />
+      <File FileName="Numerical Methods/MathBinaryTree.cs" Line="38" Column="5" />
+      <File FileName="Numerical Methods/Functions.cs" Line="73" Column="2" />
+      <File FileName="Numerical Methods/Program.cs" Line="1" Column="1" />
+      <File FileName="Numerical Methods/main.cs" Line="1" Column="1" />
+      <File FileName="Numerical Methods/differential_equations.cs" Line="12" Column="32" />
+      <File FileName="Numerical Methods/Interpolation.cs" Line="1" Column="1" />
+      <File FileName="Numerical Methods/MathNode.cs" Line="66" Column="23" />
+      <File FileName="Numerical Methods/MathBinaryTree.cs" Line="29" Column="6" />
+      <File FileName="Numerical Methods/Functions.cs" Line="69" Column="15" />
+      <File FileName="Numerical Methods/Integration.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="Numerical Methods" expanded="True">
+            <Node name="MathNode.cs" selected="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

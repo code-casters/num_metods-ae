@@ -35,6 +35,10 @@ namespace Numerical_Methods
             pt[0, 5] = 55; pt[1, 5] = 0.8192;
             pt[0, 6] = 60; pt[1, 6] = 0.8660;
             MessageBox.Show(@"Rectangles method : " + Integration.Rects(pt).ToString() + @" , Trapezoid method : " + Integration.Trapezoid(pt).ToString() + @" , Simpson method : "+ Integration.Simpson(pt).ToString());
+			
+			MathBinaryTree t = new MathBinaryTree(5);
+			t.addLnode(6,0);
+			t.addRnode(2,0);
             InitializeComponent();
         }
     }
