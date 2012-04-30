@@ -5,7 +5,7 @@ namespace Numerical_Methods
 {
 	public class MathBinaryTree
 	{	  
-		private List<MathNode> Body = new List<MathNode>(); 
+		private List<MathNode> Nodes = new List<MathNode>(); 
 
 		public MathBinaryTree ()
 		{
@@ -27,6 +27,10 @@ namespace Numerical_Methods
 				}
 			}
 		}*/
+		public int addLnode(object val , int Pid)
+		{
+			MathNode tmp = new	MathNode(val);
+		}
         private bool IsOp(string pop,out Operator op)
         {
             bool res = Operator.TryParse(pop, out op);

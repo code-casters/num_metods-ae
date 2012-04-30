@@ -90,8 +90,8 @@ namespace Numerical_Methods
         }
 
 		public MathNode(char Varnum , int Pid = 0)
-		{
-			
+		{ // var name Constructor
+			this.Create(Varnum,Pid);
 		}
 		
         public void Create(char Varname , int Pid = 0)
