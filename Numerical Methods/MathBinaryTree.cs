@@ -11,7 +11,7 @@ namespace Numerical_Methods
 		{
 			
 		}
-		public static void Parsing (string PostfixExp , params char[] VarNames){
+		/*public static void Parsing (string PostfixExp , params char[] VarNames){
 			Stack<MathNode> PexStack = new Stack<MathNode>();
 			for (int i = 0; i < PostfixExp.Length; i++) {
 				if (double.TryParse(PostfixExp[i],out num) || PostfixExp[i] == '.' ) {
@@ -26,7 +26,7 @@ namespace Numerical_Methods
 					PexStack.Push(tmp);
 				}
 			}
-		}
+		}*/
         private bool IsOp(string pop,out Operator op)
         {
             bool res = Operator.TryParse(pop, out op);
@@ -53,8 +53,6 @@ namespace Numerical_Methods
             }
             return res;
         }
-        public static byte Rank(){} //Function returns equation's rank
-        public static byte Degree(){} //Function returns equation's degree
 	}
 }
 

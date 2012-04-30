@@ -9,7 +9,6 @@ namespace Numerical_Methods
 	{
 	    return -1;
 	}
-
 /*	private static bool CheckPrimaryConds(double[,] primaryConds)
 	{
 	        return primaryConds.GetLength(1)== 
