@@ -16,19 +16,19 @@ namespace Numerical_Methods
 		/// </param>
 		public static double[,] CreatPdiffTable(double[,] pTable)
         {
+			double[,] PdiffTable = new double[pTable.GetLength(1) - 1, pTable.GetLength(1) - 1];
 			if (Integration.CheckPointTable(pTable))
 			{
-            double[,] PdiffTable = new double[pointsTable.GetLength(1) - 1, pointsTable.GetLength(1) - 1];
-			int degree = pTable.GetLength(1);
-			for (int i = 0; i < pTable.GetLength(1); i++)
-			{
-				for (int j = 0; j < degree--; j++)
+				int degree = pTable.GetLength(1);
+				for (int i = 0; i < pTable.GetLength(1); i++)
 				{
-					PdiffTable[j,i] = CalcPdiff(pTable,i,j);
+					for (int j = 0; j < degree--; j++)
+					{
+						PdiffTable[j,i] = CalcPdiff(pTable,i,j);
+					}
 				}
 			}
 			return PdiffTable;
-			}
         }
 		/// <summary>
 		/// Calculates a cell's value in progressive differations table.

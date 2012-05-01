@@ -1,5 +1,5 @@
 using System.Collections;
-using nume_metodsae;
+using Numerical_Methods;
 
 namespace Numerical_Methods
 {
@@ -37,6 +37,9 @@ namespace Numerical_Methods
 				MathNode tmp = (MathNode)Nodes[index] ; // shallow copy 
 				
 			}
+		}
+		public double this [char index]{
+			set{}
 		}
 		
 		/*public static void Parsing (string PostfixExp , params char[] VarNames){

@@ -14,11 +14,11 @@ namespace Numerical_Methods
         //    return -1;
         //}
 
-        private static bool CheckPrimaryConds(MathBinaryTree eq, double[,] primaryConds)
+       /* private static bool CheckPrimaryConds(MathBinaryTree eq, double[,] primaryConds)
         {
-            return primaryConds.GetLength(1) == eq.Rank();
+           // return primaryConds.GetLength(1) == eq.Rank();
         }
-
+		 */
     }
 }
 
