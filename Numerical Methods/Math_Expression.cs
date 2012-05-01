@@ -1,7 +1,8 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-namespace nume_metodsae
+
+namespace Numerical_Methods
 {
 	public class Math_Expression{
 		
