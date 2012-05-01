@@ -26,7 +26,6 @@ namespace Numerical_Methods
             //pt[0, 5] = 55; pt[1, 5] = 0.8192;
             //pt[0, 6] = 60; pt[1, 6] = 0.8660;
             //MessageBox.Show(Functions.Postfix("a+c+b"));
-
             double[,] pt = new double[2, 7];
             pt[0, 0] = 30; pt[1, 0] = 0.5;
             pt[0, 1] = 35; pt[1, 1] = 0.5736;

@@ -79,22 +79,22 @@ namespace Numerical_Methods
             this.Create(0d);
         }
 
-        public MathNode(double num , int Pid = 0)
+        public MathNode(double num , int Pid = -1)
         {  //Num Constructor 
             this.Create(num,Pid);
         }
 
-        public MathNode(Operator op,int Pid = 0)
+        public MathNode(Operator op,int Pid = -1)
         {  //operator Constructor 
             this.Create(op,Pid);
         }
 
-		public MathNode(char Varnum , int Pid = 0)
+		public MathNode(char Varnum , int Pid = -1)
 		{ // var name Constructor
 			this.Create(Varnum,Pid);
 		}
 		
-        public void Create(char Varname , int Pid = 0)
+        public void Create(char Varname , int Pid = -1)
         {
             this.Varname = Varname ; // set the var name like x or y.
 			// empty other fields.
@@ -107,7 +107,7 @@ namespace Numerical_Methods
 			this.ParentId = Pid;
         }
 
-        public void Create(double num , int Pid = 0)
+        public void Create(double num , int Pid = -1)
         {
             this.Num = num ; // set the numrical value.
 			// empty other fields.
@@ -119,7 +119,7 @@ namespace Numerical_Methods
 			// set the Parent Id of this node 0 mean root
 			this.ParentId = Pid;        
 		}
-        public  void Create(Operator op , int Pid = 0)
+        public  void Create(Operator op , int Pid = -1)
         {
             this.Op = op ; // set the op value like ln , root.
 			// empty other fields.
