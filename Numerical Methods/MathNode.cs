@@ -31,53 +31,110 @@ namespace Numerical_Methods
 
     public class MathNode
     {
-        /*Fields And Properties*/
-        public char Variable;
-        public double Num;
-        public Operator Op = new Operator();
-        public List<MathNode> Children = new List<MathNode>();
+        /// <summary>
+        /// Gets or sets the varname.
+        /// </summary>
+        /// <value>
+        /// The varname.
+        /// </value>
+        public char Varname{set;get;}
+    	/// <summary>
+		/// Gets or sets the number.
+		/// </summary>
+		/// <value>
+		/// The number.
+		/// </value>
+        public double Num{set;get;}
+		/// <summary>
+		/// Gets or sets the operator.
+		/// </summary>
+		/// <value>
+		/// The operator.
+		/// </value>
+        public Operator Op{set;get;}
+		/// <summary>
+		/// Gets or sets the right child id .
+		/// </summary>
+		/// <value>
+		/// The id.
+		/// </value>
+		public int Rchild{set;get;}
+		/// <summary>
+		/// Gets or sets the left child id.
+		/// </summary>
+		/// <value>
+		/// The id.
+		/// </value>
+		public int Lchild{set;get;}
+		/// <summary>
+		/// Gets or sets the parent identifier.
+		/// </summary>
+		/// <value>
+		/// The parent identifier.
+		/// </value>
+		public int ParentId {set;get;}
         /* Constructors*/
         public MathNode()
         {  //Default Constructor 
             this.Create(0d);
         }
 
-        public MathNode(double num)
+        public MathNode(double num , int Pid = 0)
         {  //Num Constructor 
-            this.Create(num);
+            this.Create(num,Pid);
         }
 
-        public MathNode(Operator op)
+        public MathNode(Operator op,int Pid = 0)
         {  //operator Constructor 
-            this.Create(op);
+            this.Create(op,Pid);
         }
 
-
-        public void Create(char Var)
+		public MathNode(char Varnum , int Pid = 0)
+		{ // var name Constructor
+			this.Create(Varnum,Pid);
+		}
+		
+        public void Create(char Varname , int Pid = 0)
         {
-            this.Variable = Var;
-            this.Children.Add(null);
-            this.Children.Add(null);
+            this.Varname = Varname ; // set the var name like x or y.
+			// empty other fields.
+			this.Op = Operator.None;
+			this.Num = double.NaN ;
+			// create empty children
+			this.Rchild = -1;
+			this.Lchild = -1;
+			// set the Parent Id of this node 0 mean root
+			this.ParentId = Pid;
         }
 
-        public void Create(double num)
+        public void Create(double num , int Pid = 0)
         {
-            this.Num = num;
-            this.Children.Add(null);
-            this.Children.Add(null);
-        }
-        public  void Create(Operator op)
+            this.Num = num ; // set the numrical value.
+			// empty other fields.
+			this.Op = Operator.None;
+			this.Varname = '\0' ;
+			// create empty children
+			this.Rchild = -1;
+			this.Lchild = -1;
+			// set the Parent Id of this node 0 mean root
+			this.ParentId = Pid;        
+		}
+        public  void Create(Operator op , int Pid = 0)
         {
-            this.Op = op;
-            this.Children.Add(null);
-            this.Children.Add(null);
+            this.Op = op ; // set the op value like ln , root.
+			// empty other fields.
+			this.Varname = '\0';
+			this.Num = double.NaN ;
+			// create empty children
+			this.Rchild = -1;
+			this.Lchild = -1;
+			// set the Parent Id of this node 0 mean root
+			this.ParentId = ParentId;
         }
-
-        
-
+		
         public bool IsLeaf()
         { // Check if this Node is leaf or not
-            if (this.Children[0] == null && this.Children[1] == null)
+            if (Rchild == -1 && Lchild == -1)
             {
                 return true;
             }
