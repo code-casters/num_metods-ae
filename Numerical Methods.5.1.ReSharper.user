@@ -1,0 +1,210 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="livetemplates.csharp.usevar">True</setting>
+      <setting name="SolutionAnalysisEnabled">True</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:main.Designer.cs" caret="0" fromTop="0" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:MathNode.cs" caret="47" fromTop="1" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:Program.cs" caret="486" fromTop="16" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:Integration.cs" caret="196" fromTop="4" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:MathBinaryTree.cs" caret="2054" fromTop="10" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:main.cs" caret="292" fromTop="12" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:differential_equations.cs" caret="127" fromTop="5" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:Interpolation.cs" caret="611" fromTop="12" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:Integration.cs" caret="3217" fromTop="19" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:Integration.cs" caret="3664" fromTop="19" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:Integration.cs" caret="3217" fromTop="0" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:Integration.cs" caret="2721" fromTop="0" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:Integration.cs" caret="3207" fromTop="17" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:Integration.cs" caret="2874" fromTop="9" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:Integration.cs" caret="3081" fromTop="12" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:Interpolation.cs" caret="1515" fromTop="17" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:Interpolation.cs" caret="1021" fromTop="4" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:differential_equations.cs" caret="566" fromTop="12" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:Integration.cs" caret="93" fromTop="4" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:Integration.cs" caret="117" fromTop="5" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:Interpolation.cs" caret="67" fromTop="3" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:Interpolation.cs" caret="93" fromTop="4" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:differential_equations.cs" caret="558" fromTop="12" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:MathBinaryTree.cs" caret="1723" fromTop="6" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:Integration.cs" caret="587" fromTop="17" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:differential_equations.cs" caret="12" fromTop="0" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:main.cs" caret="1444" fromTop="19" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:main.cs" caret="380" fromTop="0" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:main.cs" caret="1423" fromTop="13" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:main.cs" caret="288" fromTop="6" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:MathBinaryTree.cs" caret="2175" fromTop="17" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:MathBinaryTree.cs" caret="1997" fromTop="7" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:MathBinaryTree.cs" caret="2116" fromTop="12" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:differential_equations.cs" caret="558" fromTop="13" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:differential_equations.cs" caret="566" fromTop="19" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:differential_equations.cs" caret="320" fromTop="10" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:differential_equations.cs" caret="376" fromTop="7" />
+      <File id="AAE108DA-95DB-4C04-B2FD-4A562C0C02F1/f:differential_equations.cs" caret="127" fromTop="5" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="using" priority="4" />
+      <Item value="Numerical_Methods" priority="3" />
+      <Item value="Numerical_Methods.Properties" priority="0" />
+      <Item value="MessageBox`0" priority="1" />
+      <Item value="this" priority="6" />
+      <Item value="class" priority="0" />
+      <Item value="void" priority="5" />
+      <Item value="Void`0" priority="0" />
+      <Item value="struct" priority="0" />
+      <Item value="return" priority="21" />
+      <Item value="pTable" priority="26" />
+      <Item value="bool" priority="3" />
+      <Item value="range" priority="11" />
+      <Item value="Point`0" priority="6" />
+      <Item value="new" priority="8" />
+      <Item value="Point" priority="1" />
+      <Item value="public" priority="14" />
+      <Item value="double" priority="34" />
+      <Item value="a" priority="0" />
+      <Item value="b" priority="0" />
+      <Item value="for" priority="6" />
+      <Item value="ranges" priority="0" />
+      <Item value="Length" priority="1" />
+      <Item value="res" priority="3" />
+      <Item value="i" priority="0" />
+      <Item value="GetLength`0" priority="15" />
+      <Item value="int" priority="2" />
+      <Item value="if" priority="12" />
+      <Item value="n" priority="0" />
+      <Item value="else" priority="2" />
+      <Item value="sum" priority="9" />
+      <Item value="static" priority="10" />
+      <Item value="RankException`0" priority="1" />
+      <Item value="rangesNum" priority="11" />
+      <Item value="foreach" priority="1" />
+      <Item value="hal" priority="0" />
+      <Item value="pointsTable" priority="5" />
+      <Item value="InsufficientExecutionStackException`0" priority="0" />
+      <Item value="l" priority="3" />
+      <Item value="char" priority="1" />
+      <Item value="Operator`0" priority="7" />
+      <Item value="operator" priority="2" />
+      <Item value="Operator" priority="0" />
+      <Item value="List" priority="0" />
+      <Item value="MathNode`0" priority="3" />
+      <Item value="List&lt;MathNode&gt;" priority="0" />
+      <Item value="Variable" priority="0" />
+      <Item value="num" priority="2" />
+      <Item value="string" priority="3" />
+      <Item value="private" priority="5" />
+      <Item value="Stack" priority="0" />
+      <Item value="Stack&lt;MathNode&gt;" priority="0" />
+      <Item value="mathexp" priority="2" />
+      <Item value="pnum" priority="0" />
+      <Item value="out" priority="3" />
+      <Item value="MathNode" priority="1" />
+      <Item value="AuxStack" priority="2" />
+      <Item value="pop" priority="0" />
+      <Item value="op" priority="6" />
+      <Item value="switch" priority="0" />
+      <Item value="case" priority="4" />
+      <Item value="Mult" priority="0" />
+      <Item value="true" priority="5" />
+      <Item value="Mod" priority="0" />
+      <Item value="Sub" priority="0" />
+      <Item value="IsOp`0" priority="0" />
+      <Item value="tmp" priority="0" />
+      <Item value="Integration`0" priority="3" />
+      <Item value="pt" priority="1" />
+      <Item value="mbox" priority="0" />
+      <Item value="IFormatProvider`0" priority="0" />
+      <Item value="CheckPointTable`0" priority="0" />
+      <Item value="DifferentialEquations`0" priority="0" />
+      <Item value="byte" priority="3" />
+      <Item value="Math`0" priority="0" />
+      <Item value="MathBinaryTree`0" priority="2" />
+      <Item value="System" priority="0" />
+      <Item value="InvalidTimeZoneException`0" priority="0" />
+      <Item value="primaryConds`0" priority="0" />
+      <Item value="Main`0" priority="2" />
+      <Item value="mainForm`0" priority="0" />
+      <Item value="Size`0" priority="0" />
+      <Item value="ActiveForm" priority="0" />
+      <Item value="eq" priority="4" />
+      <Item value="CheckPrimaryConds`0" priority="0" />
+      <Item value="primaryConds" priority="0" />
+      <Item value="Tailor`0" priority="0" />
+      <Item value="h" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Numerical_Methods.Integration+Point">
+      <Item value="a" priority="0" />
+      <Item value="b" priority="0" />
+      <Item value="GetStart`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Numerical_Methods.MathNode">
+      <Item value="Variable" priority="0" />
+      <Item value="Num" priority="0" />
+      <Item value="Op" priority="0" />
+      <Item value="Children" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.List`1">
+      <Item value="Add`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Double">
+      <Item value="TryParse`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.Stack`1">
+      <Item value="Push`0" priority="1" />
+      <Item value="Pop`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Numerical_Methods.Operator">
+      <Item value="TryParse`1" priority="1" />
+      <Item value="Div" priority="0" />
+      <Item value="Sum" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Numerical_Methods.Integration">
+      <Item value="Sempson`0" priority="0" />
+      <Item value="Rects`0" priority="0" />
+      <Item value="Trapezoid`0" priority="1" />
+      <Item value="Simpson`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Numerical_Methods.Main">
+      <Item value="GetAutoScaleSize`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Numerical_Methods.mainForm">
+      <Item value="ActiveForm" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.Form">
+      <Item value="Size" priority="0" />
+      <Item value="Show`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Drawing.Size">
+      <Item value="Width" priority="0" />
+      <Item value="Height" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Numerical_Methods.mainForm">
+      <Item value="Width" priority="0" />
+      <Item value="Height" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Numerical_Methods.MathBinaryTree">
+      <Item value="Rank`0" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>
