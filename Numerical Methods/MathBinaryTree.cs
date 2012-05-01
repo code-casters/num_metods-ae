@@ -1,44 +1,121 @@
-using System.Collections.Generic;
+using System.Collections;
 using nume_metodsae;
 
 namespace Numerical_Methods
 {
 	public class MathBinaryTree
-	{	  
-		private List<MathNode> Body = new List<MathNode>(); 
-		private Stack<MathNode> AuxStack = new Stack<MathNode>();
+	{	
+		
+		private ArrayList Nodes = new ArrayList(); 
 
 		public MathBinaryTree ()
 		{
 			
 		}
-        public void Build(string[] mathexp)
-        {
-            for (int i = 0; i < mathexp.GetLength(0) ; i++)
-            {
-                double num;
-                Operator op;
-                if (IsNum(mathexp[i],out num))
-                {
-                    MathNode tmp = new MathNode(num);
-                    AuxStack.Push(tmp);
-                }
-                else if(IsOp(mathexp[i],out op))
-                {
-                     MathNode tmp = new MathNode(op);
-                     tmp.Children.Add(AuxStack.Pop());
-                     tmp.Children.Add(AuxStack.Pop());
-                     AuxStack.Push(tmp);
-                }
-            }
-        }
-
-        private static bool IsNum(string pnum,out double num)
-        {
-            bool res = double.TryParse(pnum, out num);
-            return res;
-        }
-
+		
+		public MathBinaryTree (double num)
+		{
+			MathNode tmp = new MathNode(num);
+			Nodes.Add(tmp);
+		}
+		public object this [int index] {
+			get {
+				MathNode tmp = (MathNode)Nodes[index] ;
+				if (tmp.Num != double.NaN)
+				{
+					return (object)tmp.Num;
+				}
+				else if (tmp.Varname != '\0') 
+				{
+					return (object)tmp.Varname;
+				}
+				else {
+					return (object)tmp.Op;
+				}
+			}
+			set {
+				MathNode tmp = (MathNode)Nodes[index] ; // shallow copy 
+				
+			}
+		}
+		
+		/*public static void Parsing (string PostfixExp , params char[] VarNames){
+			Stack<MathNode> PexStack = new Stack<MathNode>();
+			for (int i = 0; i < PostfixExp.Length; i++) {
+				if (double.TryParse(PostfixExp[i],out num) || PostfixExp[i] == '.' ) {
+					int num ;
+					string Dnum = string.Empty;
+					while (double.TryParse(PostfixExp[i],out num) || PostfixExp[i] == '.' ) {
+						Dnum += PostfixExp[i];
+						i++;
+					}
+					i--;
+					MathNode tmp = new MathNode(double.Parse(Dnum));
+					PexStack.Push(tmp);
+				}
+			}
+		}*/
+		
+		public int addLnode(char varname , int Pid)
+		{  // this for var name .
+			MathNode tmp = new	MathNode(varname);
+			tmp.ParentId = Pid;
+			int NodeId = Nodes.Add(tmp); // tmp is no longer needed
+			tmp = (MathNode)Nodes[Pid]; // set the left child of node's parent.
+			tmp.Lchild = NodeId;
+			return NodeId;
+		}
+		
+		public int addLnode(double num , int Pid)
+		{  // This for numrical value .
+			MathNode tmp = new	MathNode(num);
+			tmp.ParentId = Pid;
+			int NodeId = Nodes.Add(tmp); // tmp is no longer needed
+			tmp = (MathNode)Nodes[Pid]; // set the left child of node's parent.
+			tmp.Lchild = NodeId; // tmp is copied by refernce so any will be applied .
+			return NodeId;
+		}
+		
+		public int addLnode(Operator op , int Pid)
+		{  // this for Operator.
+			MathNode tmp = new	MathNode(op);
+			tmp.ParentId = Pid;
+			int NodeId = Nodes.Add(tmp); // tmp is no longer needed
+			tmp = (MathNode)Nodes[Pid]; // set the left child of node's parent.
+			tmp.Lchild = NodeId; // tmp is copied by refernce so any will be applied .
+			return NodeId;
+		}
+		
+	    public int addRnode(char varname , int Pid)
+		{  // this for var name .
+			MathNode tmp = new	MathNode(varname);
+			tmp.ParentId = Pid;
+			int NodeId = Nodes.Add(tmp); // tmp is no longer needed
+			tmp = (MathNode)Nodes[Pid]; // set the left child of node's parent.
+			tmp.Rchild = NodeId; // tmp is copied by refernce so any will be applied .
+			return NodeId;
+		}
+		
+		public int addRnode(double num , int Pid)
+		{  // This for numrical value.
+			MathNode tmp = new	MathNode(num);
+			tmp.ParentId = Pid;
+			int NodeId = Nodes.Add(tmp); // tmp is no longer needed
+			tmp = (MathNode)Nodes[Pid]; // set the left child of node's parent.
+			tmp.Rchild = NodeId; // tmp is copied by refernce so any will be applied .
+			return NodeId;
+		}
+		
+		public int addRnode(Operator op , int Pid)
+		{  // this for operator.
+			MathNode tmp = new	MathNode(op);
+			tmp.ParentId = Pid;
+			int NodeId = Nodes.Add(tmp); // tmp is no longer needed
+			tmp = (MathNode)Nodes[Pid]; // set the left child of node's parent.
+			tmp.Rchild = NodeId; // tmp is copied by refernce so any will be applied .
+			return NodeId;
+		}
+		
         private bool IsOp(string pop,out Operator op)
         {
             bool res = Operator.TryParse(pop, out op);
@@ -64,16 +141,6 @@ namespace Numerical_Methods
                 }
             }
             return res;
-        }
-        //Function returns equation's rank
-        public byte Rank()
-        {
-            return 1;
-        }
-        //Function returns equation's degree
-        public byte Degree()
-        {
-            return 1;
         }
 	}
 }
