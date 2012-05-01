@@ -1,5 +1,0 @@
-c:\users\asus\documents\visual studio 2010\Projects\Numerical Methods\Numerical Methods\obj\x86\Debug\ResolveAssemblyReference.cache
-c:\users\asus\documents\visual studio 2010\Projects\Numerical Methods\Numerical Methods\obj\x86\Debug\Numerical_Methods.main.resources
-c:\users\asus\documents\visual studio 2010\Projects\Numerical Methods\Numerical Methods\obj\x86\Debug\Numerical_Methods.Properties.Resources.resources
-c:\users\asus\documents\visual studio 2010\Projects\Numerical Methods\Numerical Methods\obj\x86\Debug\GenerateResource.read.1.tlog
-c:\users\asus\documents\visual studio 2010\Projects\Numerical Methods\Numerical Methods\obj\x86\Debug\GenerateResource.write.1.tlog
