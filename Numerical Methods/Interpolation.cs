@@ -62,17 +62,27 @@ namespace Numerical_Methods
 		/// <param name='pTable'>
 		/// Function's values table.
 		/// </param>
-		public static double Lagrange (double[,] pTable,double num, string func)
+		public static double Lagrange(double[,] pTable,double num,MathBinaryTree func)
 		{
-			double result = 0d;
-			for (int i = 0; i < pTable.GetLength(1);i++)
-			{
-				result += pTable[1,i];//and should be multiplied with the 1st derivative of lagrange polynomial
-
+			if (pTable.GetLength(1) != 3){
+				double sum = 0d;
+				for (int i = 0; i < pTable.GetLength(1);i++)
+				{
+					sum += pTable[1,i]*func.derivative().eval();//and should be multiplied with the 1st derivative of lagrange polynomial
+				}
+				return sum;
 			}
-			return result;
+			else {
+				if (Integration.CheckPointTable(pTable)){
+					double h = pTable[1,0]-pTable[1,1];
+					return 1/(2*h) *(-3*pTable[1,0]+4*pTable[1,1]-pTable[1,2]);
+				}
+				else {	
+					return pTable[1,0]*(2*num-pTable[0,1]-pTable[0,2])/((pTable[0,0]-pTable[0,1])*(pTable[0,0]-pTable[0,2]))+pTable[1,1]*(2*num-pTable[0,0]-pTable[0,2])/((pTable[0,1]-pTable[0,0])*(pTable[0,1]-pTable[0,2]))+pTable[1,2]*(2*num-pTable[0,0]-pTable[0,1])/((pTable[0,2]-pTable[0,0])*(pTable[0,2]-pTable[0,1]));
+				}
+			}
 		}
-		
+
 		/// <summary>
 		/// Calculates the factorial for the specified num.
 		/// </summary>

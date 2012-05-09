@@ -5,20 +5,17 @@ namespace Numerical_Methods
 {
     public static class DifferentialEquations
     {
-        //public static double Tailor(MathBinaryTree eq, int h, double[,] primaryConds)
-        //{
-        //    if (CheckPrimaryConds(eq, primaryConds))
-        //    {
-                
-        //    }
-        //    return -1;
-        //}
-
-       /* private static bool CheckPrimaryConds(MathBinaryTree eq, double[,] primaryConds)
+        public static double Tailor(MathBinaryTree eq, double[,] pTable , int rank)
         {
-           // return primaryConds.GetLength(1) == eq.Rank();
-        }
-		 */
+			double h = pTable[0,1]-pTable[0,0];
+            if (rank == 0) {
+				return pTable[1,0];
+            }
+			else {
+				return 0;
+			}
+		}
+
     }
 }
 
