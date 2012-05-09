@@ -225,9 +225,11 @@ namespace Numerical_Methods
 		{
 			this.Nodes.Clear();
 			foreach (MathNode Node in Original.Nodes) {
-				MathNode t = new MathNode();
-				t = Node.Clone();
-				this.Nodes.Add(t);
+				if (Node != null) {
+					MathNode t = new MathNode();
+					t = Node.Clone();
+					this.Nodes.Add(t);	
+				}
 			}
 			this.Root = Original.Root;
 		}
@@ -243,7 +245,7 @@ namespace Numerical_Methods
 			MathBinaryTree tmpTree = new MathBinaryTree();
 			tmpTree.Clone(this);
 			for (int i = 0; i < Nodes.Count; i++) {
-				if (this[i].Op != Operator.None) {
+				if (this[i]!=null && this[i].Op != Operator.None) {
 					switch (this[i].Op) {
 					case Operator.Pow:
 						res = Math.Pow(this[this[i].Lchild].Num,this[this[i].Rchild].Num) ;
@@ -320,7 +322,6 @@ namespace Numerical_Methods
 			this.Clone(tmpTree);
 			return res ;
 		}
-		
 		private string[] Split(string exp , string varname)
 		{
 			int j = 0 ;
@@ -467,7 +468,7 @@ namespace Numerical_Methods
 			if (op == "+" || op == "-") {
 				return 1 ;
 			}
-			else if(op == "*" || op == "/" || op == "^") {
+			else if(op == "*" || op == "/") {
 				return 2 ;
 			}
 			else 

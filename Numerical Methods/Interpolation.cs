@@ -67,12 +67,28 @@ namespace Numerical_Methods
 			double result = 0d;
 			for (int i = 0; i < pTable.GetLength(1);i++)
 			{
-				result += pTable[1,i];//and should be multiplied with the 1st derivative of lagrange polynomial
+				result += pTable[1,i] * Lagrange_Dif(pTable,i,pTable[i,0]);//and should be multiplied with the 1st derivative of lagrange polynomial
 
 			}
 			return result;
 		}
-		
+		public static double Lagrange_Dif(double[,] pTable ,int num,double Val)
+		{
+			int m = pTable.GetLength(1)-1;
+			double Fres = 0 ;
+			for (int i = 1; i < m ; i++) {
+				double s = 1 / (pTable[num,0]-pTable[i,0]);
+				double res = 1 ;
+				for (int j = 0; j < m; j++) {
+					if (j!=m || j!=i) {
+						res *= (Val-pTable[j,0])/(pTable[num,0]-pTable[j,0]);
+					}
+				}
+				res *= s ;
+				Fres += res;
+			}
+			return Fres;
+		}
 		/// <summary>
 		/// Calculates the factorial for the specified num.
 		/// </summary>
