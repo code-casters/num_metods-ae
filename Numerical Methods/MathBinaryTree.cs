@@ -273,11 +273,11 @@ namespace Numerical_Methods
 						this[i].Create(res,this[i].ParentId);
 						break;
 					case Operator.Cot:
-						res = Math.Cot(this[this[i].Rchild].Num);
+						res = 1/Math.Tan(this[this[i].Rchild].Num);
 						this[i].Create(res,this[i].ParentId);
 						break;
-					case Operator.ln:
-						res = Math.ln(this[this[i].Rchild].Num);
+					case Operator.Ln:
+						res = Math.Log(this[this[i].Rchild].Num);
 						this[i].Create(res,this[i].ParentId);
 						break;
 					case Operator.Exp:
@@ -320,6 +320,49 @@ namespace Numerical_Methods
             }
             return res;
         }
+		public string[] Split(string exp , string varname)
+		{
+			int j = 0 ;
+			string[] spstr = new string[exp.Length];
+			for (int i = 0; i < exp.Length ; i++) 
+			{
+				if ((char.IsDigit(exp[i]) || exp[i] == '.') || (i==0 && exp[i] == '-') ) {
+					spstr[j] = exp[i].ToString();
+					i++;
+					while((char.IsDigit(exp[i]) || exp[i] == '.') && i < exp.Length )
+					{
+						spstr[j]+=exp[i].ToString();
+						i++;
+					}
+					i--;
+				}
+				else if (varname.Contains(exp[i].ToString()))
+				{
+					spstr[j] = exp[i].ToString();
+				}
+				else if (exp[i] == '+' || exp[i] == '-' || exp[i] == '*' || exp[i] == '/' || exp[i] == '%' || exp[i] == '|' )
+				{
+					spstr[j] = exp[i].ToString();
+				}
+				else if (exp[i] == '(' || exp[i] == ')' ) 
+				{
+					spstr[j] = exp[i].ToString();
+				}
+				else 
+				{
+					spstr[j] = exp[i].ToString();
+					i++;
+					while(i < exp.Length && exp[i] != '(')
+					{
+						spstr[j] += exp[i].ToString();
+						i++;
+					}
+					i--;
+				}
+				j++;
+			}
+			return spstr;
+		}
 	}
 }
 
