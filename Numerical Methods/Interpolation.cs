@@ -62,15 +62,13 @@ namespace Numerical_Methods
 		/// <param name='pTable'>
 		/// Function's values table.
 		/// </param>
-		public static double Lagrange (double[,] pTable,double num, string func)
+		public static double Lagrange(double[,] pTable,double num,MathBinaryTree func)
 		{
 			double result = 0d;
 			for (int i = 0; i < pTable.GetLength(1);i++)
 			{
 				result += pTable[1,i] * Lagrange_Dif(pTable,i,pTable[i,0]);//and should be multiplied with the 1st derivative of lagrange polynomial
-
 			}
-			return result;
 		}
 		public static double Lagrange_Dif(double[,] pTable ,int num,double Val)
 		{
