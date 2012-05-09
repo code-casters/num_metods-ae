@@ -5,6 +5,24 @@ namespace Numerical_Methods
 {
     public static class Interpolation
     {
+		public static double NewtonGreekory(double [,] pTable,int rank, double x){
+			if (Integration.CheckPointTable(pTable)) {
+				double res = 0;
+				double h = pTable[0,1]-pTable[0,0];
+				double p = (x-pTable[0,0])/h;
+				double PdiffTable = CreatPdiffTable(pTable);
+				if (rank == 1){
+					for (int i = 0; i < max; i++) {
+						p = 0;
+						res += PdiffTable[0,i]*p/Factorial(i+1);
+					}
+				}
+				else if (rank == 2){
+				}
+			}
+			return -1;
+		}
+		
 		/// <summary>
 		/// Creats the pdiff table.
 		/// </summary>
@@ -62,12 +80,12 @@ namespace Numerical_Methods
 		/// <param name='pTable'>
 		/// Function's values table.
 		/// </param>
-		public static double Lagrange(double[,] pTable,double num,MathBinaryTree func)
+		public static double Lagrange(double[,] pTable,double num)
 		{
 			double result = 0d;
 			for (int i = 0; i < pTable.GetLength(1);i++)
 			{
-				result += pTable[1,i] * Lagrange_Dif(pTable,i,pTable[i,0]);//and should be multiplied with the 1st derivative of lagrange polynomial
+				result += pTable[1,i] * Lagrange_Dif(pTable,i,pTable[i,0]);	
 			}
 		}
 		public static double Lagrange_Dif(double[,] pTable ,int num,double Val)
