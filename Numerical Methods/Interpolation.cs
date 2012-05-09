@@ -62,7 +62,7 @@ namespace Numerical_Methods
 		/// <param name='pTable'>
 		/// Function's values table.
 		/// </param>
-		public static double Lagrange (double[,] pTable)
+	/*	public static double Lagrange (double[,] pTable)
 		{
 			for (int i = 0; i < pTable.GetLength(1);i++)
 			{
@@ -110,7 +110,7 @@ namespace Numerical_Methods
 				return sum*mult;
 			}
 		}
-	
+	*/
 		/// <summary>
 		/// Calculates the factorial for the specified num.
 		/// </summary>

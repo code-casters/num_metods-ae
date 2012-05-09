@@ -232,7 +232,16 @@ namespace Numerical_Methods
 						res = this[this[i].Lchild].Num + this[this[i].Rchild].Num ;
 						this[i].Create(res,this[i].ParentId);
 						break;
+					case Operator.Sub :
+						res = this[this[i].Lchild].Num - this[this[i].Rchild].Num ;
+						this[i].Create(res,this[i].ParentId);
+						break;
+					case Operator.Div:
+					res = this[this[i].Lchild].Num / this[this[i].Rchild].Num ;
+						this[i].Create(res,this[i].ParentId);
+						break;
 					}
+					
 				}
 				else if (this[i].Varname != '\0') {
 					this[i].Varname = '\0';
