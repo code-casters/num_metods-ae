@@ -27,7 +27,7 @@ namespace Numerical_Methods
             //pt[0, 6] = 60; pt[1, 6] = 0.8660;
             //MessageBox.Show(Functions.Postfix("a+c+b"));
 			MathBinaryTree te = new MathBinaryTree();
-			string[] exp = {"8","x","/","6","-"};
+			string[] exp = {"8","x","/","6","-","cos"};
 			te.Build(exp);
 			double x = te.Eval(2);
             double[,] pt = new double[2, 7];

@@ -22,7 +22,7 @@ namespace Numerical_Methods
 		public MathNode this [int index] {
 			get 
 			{
-				return (MathNode)Nodes[index]; ;
+				return (MathNode)Nodes[index];
 			}
 			set 
 			{
@@ -200,11 +200,19 @@ namespace Numerical_Methods
 					 * set thire Pid
 					 * finally push the new tree to the stack
 					*/
-					tmp.Rchild = Id_stack.Pop();
-					tmp.Lchild = Id_stack.Pop();
+					if (Id_stack.Count > 0) {
+						tmp.Rchild = Id_stack.Pop();	
+					}
+					if (Id_stack.Count > 0) {
+						tmp.Lchild = Id_stack.Pop();	
+					}
 				 	int Nid = this.Nodes.Add(tmp);
-					this[tmp.Rchild].ParentId = Nid;
-					this[tmp.Lchild].ParentId = Nid;
+					if (tmp.Rchild != -1) {
+						this[tmp.Rchild].ParentId = Nid;	
+					}
+					if (tmp.Lchild != -1) {
+						this[tmp.Lchild].ParentId = Nid;	
+					}
 					Id_stack.Push(Nid);
 					if (tmp.ParentId == -1) {
 						this.Root = Nid;
@@ -238,6 +246,42 @@ namespace Numerical_Methods
 						break;
 					case Operator.Div:
 					res = this[this[i].Lchild].Num / this[this[i].Rchild].Num ;
+						this[i].Create(res,this[i].ParentId);
+						break;
+					case Operator.Abs:
+						res = Math.Abs(this[this[i].Rchild].Num);
+						this[i].Create(res,this[i].ParentId);
+						break;
+					case Operator.Acos:
+						res = Math.Acos(this[this[i].Rchild].Num);
+						this[i].Create(res,this[i].ParentId);
+						break;
+					case Operator.Cos:
+						res = Math.Cos(this[this[i].Rchild].Num);
+						this[i].Create(res,this[i].ParentId);
+						break;
+					case Operator.ASin:
+						res = Math.Asin(this[this[i].Rchild].Num);
+						this[i].Create(res,this[i].ParentId);
+						break;
+					case Operator.Atan:
+						res = Math.Atan(this[this[i].Rchild].Num);
+						this[i].Create(res,this[i].ParentId);
+						break;
+					case Operator.Cosh:
+						res = Math.Cosh(this[this[i].Rchild].Num);
+						this[i].Create(res,this[i].ParentId);
+						break;
+					case Operator.Cot:
+						res = Math.Cot(this[this[i].Rchild].Num);
+						this[i].Create(res,this[i].ParentId);
+						break;
+					case Operator.ln:
+						res = Math.ln(this[this[i].Rchild].Num);
+						this[i].Create(res,this[i].ParentId);
+						break;
+					case Operator.Exp:
+						res = Math.Exp(this[this[i].Rchild].Num);
 						this[i].Create(res,this[i].ParentId);
 						break;
 					}
