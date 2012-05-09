@@ -62,55 +62,17 @@ namespace Numerical_Methods
 		/// <param name='pTable'>
 		/// Function's values table.
 		/// </param>
-	/*	public static double Lagrange (double[,] pTable)
+		public static double Lagrange (double[,] pTable,double num, string func)
 		{
+			double result = 0d;
 			for (int i = 0; i < pTable.GetLength(1);i++)
 			{
-				return pTable[1,i]*Lagrange1Derivative(pTable.GetLength(1),i,Numerical_Methods);
+				result += pTable[1,i];//and should be multiplied with the 1st derivative of lagrange polynomial
+
 			}
+			return result;
 		}
 		
-		/// <summary>
-		/// Lagrange first derivative.
-		/// </summary>
-		/// <returns>
-		/// The derivative.
-		/// </returns>
-		/// <param name='M'>
-		/// Values number.
-		/// </param>
-		/// <param name='i'>
-		/// Lagrange's polynomynal degree.
-		/// </param>
-		/// <param name='num'>
-		/// Entered value.
-		/// </param>
-		private static double Lagrange1Derivative(int M, int i, double num)
-		{
-			double [] s = new double[M]();
-			for (int c = 0; c < M; c++)
-			{
-				s[c] = -1+2	*(i-1)/(M-1);
-			}
-			for (int k = 0; k < M; k++)
-			{
-				double sum = 0d;
-				double mult = 1d;
-				if (k != i)
-				{
-					sum += 1/(s[i]-s[k]);
-				}
-				for (int j = 0; j < M; j++)
-				{
-					if ((j != i) && (j != k))
-					{
-						mult *= (num-s[j])/(s[i]-s[j]);
-					}
-				}
-				return sum*mult;
-			}
-		}
-	*/
 		/// <summary>
 		/// Calculates the factorial for the specified num.
 		/// </summary>
