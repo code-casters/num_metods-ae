@@ -7,14 +7,13 @@ namespace Numerical_Methods
 {
 	public class MathBinaryTree
 	{	
-		
+		public int Root {set;get;}
 		private ArrayList Nodes = new ArrayList(); 
 
 		public MathBinaryTree ()
 		{
-			
-		}
 		
+		}
 		public MathBinaryTree (double num)
 		{
 			MathNode tmp = new MathNode(num);
@@ -112,18 +111,18 @@ namespace Numerical_Methods
 			for (int i = 0; i < exp.Length; i++) {
 				MathNode tmp  = new MathNode();
 				double res ;
-				if (double.TryParse(exp[i],out res)) 
+				if (double.TryParse(exp[i],out res)) // if it was a double
 				{
 					tmp.Create(res);
 				}
-				else if (varname.Contains(exp[i])) 
+				else if (varname.Contains(exp[i])) // if it was a var name
 				{
 					char t = Convert.ToChar(exp[i]);
 					tmp.Create(t);
 				}
 				else
-				{
-					int abs_bracket_num = 0 ;
+				{   //check if it an operator
+					int abs_bracket_num = 0 ;// for check for ||
 					switch (exp[i]) {
 					case "+" :
 						tmp.Create(Operator.Sum);
@@ -193,22 +192,54 @@ namespace Numerical_Methods
 						tmp.Create(Operator.Exp);
 						break;
 					}
-				}
+				}//end checking of operator
 				if (tmp.Op != Operator.None) 
 				{
+					/*if it was an op put two of stack node as 
+					 * left and right child
+					 * set thire Pid
+					 * finally push the new tree to the stack
+					*/
 					tmp.Rchild = Id_stack.Pop();
 					tmp.Lchild = Id_stack.Pop();
 				 	int Nid = this.Nodes.Add(tmp);
 					this[tmp.Rchild].ParentId = Nid;
 					this[tmp.Lchild].ParentId = Nid;
 					Id_stack.Push(Nid);
+					if (tmp.ParentId == -1) {
+						this.Root = Nid;
+					}
 				}
 				else
 				{
+					//creat a new node and push it to the stack
 					int Nid = this.Nodes.Add(tmp);
 					Id_stack.Push(Nid);
 				}
 			}
+		}
+		public double Eval (double val)
+		{
+			double res = 0 ;
+			for (int i = 0; i < Nodes.Count; i++) {
+				if (this[i].Op != Operator.None) {
+					switch (this[i].Op) {
+					case Operator.Mult :
+						res = this[this[i].Lchild].Num * this[this[i].Rchild].Num ;
+						this[i].Create(res,this[i].ParentId);
+						break;
+					case Operator.Sum :
+						res = this[this[i].Lchild].Num + this[this[i].Rchild].Num ;
+						this[i].Create(res,this[i].ParentId);
+						break;
+					}
+				}
+				else if (this[i].Varname != '\0') {
+					this[i].Varname = '\0';
+					this[i].Num = val;
+				}
+			}
+			return res ;
 		}
         private bool IsOp(string pop,out Operator op)
         {
