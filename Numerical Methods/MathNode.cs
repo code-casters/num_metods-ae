@@ -141,7 +141,17 @@ namespace Numerical_Methods
             else
                 return false;
         }
-
+		public MathNode Clone()
+		{
+			MathNode tmp = new MathNode();
+			tmp.Lchild = this.Lchild;
+			tmp.Rchild = this.Rchild;
+			tmp.ParentId = this.ParentId;
+			tmp.Op = this.Op;
+			tmp.Num = this.Num;
+			tmp.Varname = this.Varname;
+			return tmp;
+		}
     }
 }
 
