@@ -30,16 +30,23 @@
         {
             this.tabMethods = new System.Windows.Forms.TabControl();
             this.tabPInterpolation = new System.Windows.Forms.TabPage();
+<<<<<<< HEAD
             this.gboxInterpolation = new System.Windows.Forms.GroupBox();
+=======
+            this.gboxOptions = new System.Windows.Forms.GroupBox();
+>>>>>>> origin/master
             this.txtbxrank = new System.Windows.Forms.TextBox();
             this.rdbtnNewton = new System.Windows.Forms.RadioButton();
             this.rdbtnLagrange = new System.Windows.Forms.RadioButton();
             this.txtbxNum = new System.Windows.Forms.TextBox();
             this.tabPIntegration = new System.Windows.Forms.TabPage();
+<<<<<<< HEAD
             this.gboxIntegration = new System.Windows.Forms.GroupBox();
             this.rdbtnSimpson = new System.Windows.Forms.RadioButton();
             this.rdbtnRectangles = new System.Windows.Forms.RadioButton();
             this.rdbtnTrapezoid = new System.Windows.Forms.RadioButton();
+=======
+>>>>>>> origin/master
             this.btnCalc = new System.Windows.Forms.Button();
             this.lblres = new System.Windows.Forms.Label();
             this.datgridTable = new System.Windows.Forms.DataGridView();
@@ -56,9 +63,13 @@
             this.sendFeedbackToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabMethods.SuspendLayout();
             this.tabPInterpolation.SuspendLayout();
+<<<<<<< HEAD
             this.gboxInterpolation.SuspendLayout();
             this.tabPIntegration.SuspendLayout();
             this.gboxIntegration.SuspendLayout();
+=======
+            this.gboxOptions.SuspendLayout();
+>>>>>>> origin/master
             ((System.ComponentModel.ISupportInitialize)(this.datgridTable)).BeginInit();
             this.menuStripMain.SuspendLayout();
             this.SuspendLayout();
@@ -76,7 +87,11 @@
             // 
             // tabPInterpolation
             // 
+<<<<<<< HEAD
             this.tabPInterpolation.Controls.Add(this.gboxInterpolation);
+=======
+            this.tabPInterpolation.Controls.Add(this.gboxOptions);
+>>>>>>> origin/master
             this.tabPInterpolation.Controls.Add(this.txtbxNum);
             this.tabPInterpolation.Location = new System.Drawing.Point(4, 22);
             this.tabPInterpolation.Name = "tabPInterpolation";
@@ -86,6 +101,7 @@
             this.tabPInterpolation.Text = "Interpolation";
             this.tabPInterpolation.UseVisualStyleBackColor = true;
             // 
+<<<<<<< HEAD
             // gboxInterpolation
             // 
             this.gboxInterpolation.Controls.Add(this.txtbxrank);
@@ -97,6 +113,19 @@
             this.gboxInterpolation.TabIndex = 5;
             this.gboxInterpolation.TabStop = false;
             this.gboxInterpolation.Text = "Options";
+=======
+            // gboxOptions
+            // 
+            this.gboxOptions.Controls.Add(this.txtbxrank);
+            this.gboxOptions.Controls.Add(this.rdbtnNewton);
+            this.gboxOptions.Controls.Add(this.rdbtnLagrange);
+            this.gboxOptions.Location = new System.Drawing.Point(6, 40);
+            this.gboxOptions.Name = "gboxOptions";
+            this.gboxOptions.Size = new System.Drawing.Size(222, 74);
+            this.gboxOptions.TabIndex = 5;
+            this.gboxOptions.TabStop = false;
+            this.gboxOptions.Text = "Options";
+>>>>>>> origin/master
             // 
             // txtbxrank
             // 
@@ -108,8 +137,13 @@
             this.txtbxrank.TabIndex = 2;
             this.txtbxrank.Text = "Enter rank";
             this.txtbxrank.Visible = false;
+<<<<<<< HEAD
             this.txtbxrank.Enter += new System.EventHandler(this.TxtbxrankEnter);
             this.txtbxrank.Leave += new System.EventHandler(this.TxtbxrankLeave);
+=======
+            this.txtbxrank.Enter += new System.EventHandler(this.txtbxrank_Enter);
+            this.txtbxrank.Leave += new System.EventHandler(this.txtbxrank_Leave);
+>>>>>>> origin/master
             // 
             // rdbtnNewton
             // 
@@ -121,7 +155,11 @@
             this.rdbtnNewton.TabStop = true;
             this.rdbtnNewton.Text = "Newton Greekory";
             this.rdbtnNewton.UseVisualStyleBackColor = true;
+<<<<<<< HEAD
             this.rdbtnNewton.CheckedChanged += new System.EventHandler(this.RdbtnNewtonCheckedChanged);
+=======
+            this.rdbtnNewton.CheckedChanged += new System.EventHandler(this.rdbtnNewton_CheckedChanged);
+>>>>>>> origin/master
             // 
             // rdbtnLagrange
             // 
@@ -133,6 +171,7 @@
             this.rdbtnLagrange.TabStop = true;
             this.rdbtnLagrange.Text = "Lagrange";
             this.rdbtnLagrange.UseVisualStyleBackColor = true;
+<<<<<<< HEAD
             this.rdbtnLagrange.CheckedChanged += new System.EventHandler(this.RdbtnNewtonCheckedChanged);
             // 
             // txtbxNum
@@ -150,6 +189,20 @@
             // tabPIntegration
             // 
             this.tabPIntegration.Controls.Add(this.gboxIntegration);
+=======
+            // 
+            // txtbxNum
+            // 
+            this.txtbxNum.Location = new System.Drawing.Point(6, 14);
+            this.txtbxNum.Name = "txtbxNum";
+            this.txtbxNum.Size = new System.Drawing.Size(217, 20);
+            this.txtbxNum.TabIndex = 3;
+            this.txtbxNum.Enter += new System.EventHandler(this.txtbxNum_Enter);
+            this.txtbxNum.Leave += new System.EventHandler(this.txtbxNum_Leave);
+            // 
+            // tabPIntegration
+            // 
+>>>>>>> origin/master
             this.tabPIntegration.Location = new System.Drawing.Point(4, 22);
             this.tabPIntegration.Name = "tabPIntegration";
             this.tabPIntegration.Padding = new System.Windows.Forms.Padding(3);
@@ -158,6 +211,7 @@
             this.tabPIntegration.Text = "Integration";
             this.tabPIntegration.UseVisualStyleBackColor = true;
             // 
+<<<<<<< HEAD
             // gboxIntegration
             // 
             this.gboxIntegration.Controls.Add(this.rdbtnSimpson);
@@ -206,6 +260,8 @@
             this.rdbtnTrapezoid.UseVisualStyleBackColor = true;
             this.rdbtnTrapezoid.CheckedChanged += new System.EventHandler(this.RdbtnNewtonCheckedChanged);
             // 
+=======
+>>>>>>> origin/master
             // btnCalc
             // 
             this.btnCalc.Location = new System.Drawing.Point(159, 185);
@@ -214,7 +270,11 @@
             this.btnCalc.TabIndex = 11;
             this.btnCalc.Text = "Calculate";
             this.btnCalc.UseVisualStyleBackColor = true;
+<<<<<<< HEAD
             this.btnCalc.Click += new System.EventHandler(this.BtnCalcClick);
+=======
+            this.btnCalc.Click += new System.EventHandler(this.btnCalc_Click);
+>>>>>>> origin/master
             // 
             // lblres
             // 
@@ -246,7 +306,11 @@
             this.datgridTable.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.datgridTable.Size = new System.Drawing.Size(141, 248);
             this.datgridTable.TabIndex = 9;
+<<<<<<< HEAD
             this.datgridTable.Leave += new System.EventHandler(this.DatgridTableLeave);
+=======
+            this.datgridTable.Leave += new System.EventHandler(this.datgridTable_Leave);
+>>>>>>> origin/master
             // 
             // x
             // 
@@ -312,7 +376,11 @@
             this.creditsToolStripMenuItem.Name = "creditsToolStripMenuItem";
             this.creditsToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
             this.creditsToolStripMenuItem.Text = "Credits";
+<<<<<<< HEAD
             this.creditsToolStripMenuItem.Click += new System.EventHandler(this.CreditsToolStripMenuItemClick);
+=======
+            this.creditsToolStripMenuItem.Click += new System.EventHandler(this.creditsToolStripMenuItem_Click_1);
+>>>>>>> origin/master
             // 
             // toolStripSeparator1
             // 
@@ -324,7 +392,11 @@
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
             this.exitToolStripMenuItem.Text = "Exit";
+<<<<<<< HEAD
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.ExitToolStripMenuItemClick);
+=======
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click_1);
+>>>>>>> origin/master
             // 
             // helpToolStripMenuItem
             // 
@@ -337,9 +409,15 @@
             // sendFeedbackToolStripMenuItem
             // 
             this.sendFeedbackToolStripMenuItem.Name = "sendFeedbackToolStripMenuItem";
+<<<<<<< HEAD
             this.sendFeedbackToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
             this.sendFeedbackToolStripMenuItem.Text = "Report a bug";
             this.sendFeedbackToolStripMenuItem.Click += new System.EventHandler(this.SendFeedbackToolStripMenuItemClick);
+=======
+            this.sendFeedbackToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.sendFeedbackToolStripMenuItem.Text = "Report a bug";
+            this.sendFeedbackToolStripMenuItem.Click += new System.EventHandler(this.sendFeedbackToolStripMenuItem_Click);
+>>>>>>> origin/master
             // 
             // MainForm
             // 
@@ -361,11 +439,16 @@
             this.tabMethods.ResumeLayout(false);
             this.tabPInterpolation.ResumeLayout(false);
             this.tabPInterpolation.PerformLayout();
+<<<<<<< HEAD
             this.gboxInterpolation.ResumeLayout(false);
             this.gboxInterpolation.PerformLayout();
             this.tabPIntegration.ResumeLayout(false);
             this.gboxIntegration.ResumeLayout(false);
             this.gboxIntegration.PerformLayout();
+=======
+            this.gboxOptions.ResumeLayout(false);
+            this.gboxOptions.PerformLayout();
+>>>>>>> origin/master
             ((System.ComponentModel.ISupportInitialize)(this.datgridTable)).EndInit();
             this.menuStripMain.ResumeLayout(false);
             this.menuStripMain.PerformLayout();
@@ -385,7 +468,11 @@
         private System.Windows.Forms.Button btnCalc;
         private System.Windows.Forms.TabPage tabPIntegration;
         private System.Windows.Forms.TabPage tabPInterpolation;
+<<<<<<< HEAD
         private System.Windows.Forms.GroupBox gboxInterpolation;
+=======
+        private System.Windows.Forms.GroupBox gboxOptions;
+>>>>>>> origin/master
         private System.Windows.Forms.TextBox txtbxrank;
         private System.Windows.Forms.RadioButton rdbtnNewton;
         private System.Windows.Forms.RadioButton rdbtnLagrange;
@@ -398,10 +485,13 @@
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sendFeedbackToolStripMenuItem;
+<<<<<<< HEAD
         private System.Windows.Forms.GroupBox gboxIntegration;
         private System.Windows.Forms.RadioButton rdbtnSimpson;
         private System.Windows.Forms.RadioButton rdbtnRectangles;
         private System.Windows.Forms.RadioButton rdbtnTrapezoid;
+=======
+>>>>>>> origin/master
 
     }
 }
