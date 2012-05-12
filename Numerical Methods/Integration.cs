@@ -75,7 +75,7 @@ namespace Numerical_Methods
                 double sum = 0d;
                 if (pTable.GetLength(1) != 1)
                 {
-                    for (int i = 1; i < pTable.GetLength(1)-1; i++)
+                    for (int i = 1; i < pTable.GetLength(1) - 1; i++)
                     {
                         sum += pTable[1, i];
                     }
